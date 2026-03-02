@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+
+        <div class="logo">UrbanKicks</div>
+
+        <nav>
+            <a href="#">Home</a> 
+            <a href="#">Shop</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+        </nav>
+
+        <div class="cart-icon" onclick="toggleCart()">
+            <img src="icon.png" alt="cart">
+            <span id="cart-count">0</span>
+        </div>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-left">
+            <h1>Step into Style</h1>
+            <p>Discover the Latest Sneakers For Men And Women</p>
+            <button class="shop-btn">Shop Men</button>
+        </div>
+
+        <div class="hero-right">
+            <img src="Shoe3.jpg" alt="shoe">
+        </div>
+
+    </section>
+
+    <section class="products">
+
+        <h2>Featured Sneakers</h2>
+
+        <div class="filters">
+            <button class="active">All</button>
+            <button>Men</button>
+            <button>Women</button>
+        </div>
+
+        <div class="product-grid">
+
+        <div class="product">
+            <img src="Shoe2.jpg" alt="">
+            <h3>Nike Air MAX</h3>
+            <P>$120</P>
+            <button onclick="addtoCart('Nike Air Max',120)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="Shoe3.jpg" alt="">
+            <h3>Adidas Ultraboost</h3>
+            <p>$150</p>
+            <button onclick="addtoCart('Adidas Ultraboost',150)">Add to Cart</button>
+        </div>
+
+            <div class="product">
+                <img src="Shoe1.jpg" alt="">
+                <h3>Air Jordan</h3>
+                <p>$180</p>
+                <button onclick="addtoCart('Air Jordan',180)">Add to cart</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="cart" id="cart">
+        <h2>your cart</h2>
+
+        <div id="cart-items"></div>
+
+        <h3>Total: $<span id="total">0</span></h3>
+        
+        <button class="checkout">Checkout</button>
+
+    </div>
+ 
+    <script src="index.js"></script>
+</body>
+</html>
