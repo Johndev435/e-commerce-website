@@ -205,3 +205,22 @@ nav a{
 html {
     scroll-behavior: smooth;
 }
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero{
+        padding: 40px;
+        margin: 20px;
+    }
+    .hero-left h1{
+        font-size: 36px;
+    }
+    .hero-right img{
+        width: 250px;
+    }
+    .product-grid{
+        grid-template-columns: 1fr;
+    }
+}
